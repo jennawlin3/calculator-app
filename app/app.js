@@ -1,6 +1,8 @@
 const changeColorCircle = document.querySelector("#range-option-button");
 const elementsTheme = document.querySelectorAll(".theme");
 const body = document.querySelector("body");
+const calculatorBtns = document.querySelectorAll("button");
+const calculatorScreen = document.querySelector("#calculator-screen");
 let mode = 0;
 
 changeColorCircle.addEventListener("input", e => {
@@ -30,4 +32,13 @@ changeColorCircle.addEventListener("input", e => {
             element.classList.remove("light");
         })
     }
+});
+
+calculatorBtns.forEach(btn => {
+    btn.addEventListener("click", e => {
+        e.preventDefault();
+        if(e) {
+            
+        }
+    })
 })
