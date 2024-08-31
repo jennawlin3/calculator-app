@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/styles.css">
+  <title>Frontend Mentor | Calculator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="dark theme">
+  <header class="header-container">
+    <span class="logo theme dark">calc</span>
+    <div class="range-option-button_container">
+    <div class="theme-modes dark theme">
+      <span class="dark-mode">1</span>
+      <span class="dark-mode">2</span>
+      <span class="dark-mode">3</span>
+    </div>
+    <div class="range-option-container dark Theme">
+      <label for="range-option-button" class="range-option-label dark theme">Theme</label>
+      <div class="range-option-btn_container dark theme">
+        <span class="circle dark theme"></span>
+      <input type="range" value="0" min="0" max="2" name="range-option-button" id="range-option-button" class="dark">        
+      </div>
+    </div>
+    </div>
+  </header>
+  <main class="container">
+    <div id="calculator-screen" class="dark theme"><span class="result dark">klkl</span></div>
+    <div class="calculator-buttons_container dark theme">
+      <form action="" method="post">
+        <button id="7" class="dark theme">7</button>
+        <button id="8" class="dark theme">8</button>
+        <button id="9" class="dark theme">9</button>
+        <button id="delete" class="dark theme">del</button>
+        <button id="4" class="dark theme">4</button>
+        <button id="5" class="dark theme">5</button>
+        <button id="6" class="dark theme">6</button>
+        <button id="plus" class="dark theme">+</button>
+        <button id="1" class="dark theme">1</button>
+        <button id="2" class="dark theme">2</button>
+        <button id="3" class="dark theme">3</button>
+        <button id="minus" class="dark theme">-</button>
+        <button id="dot" class="dark theme">.</button>
+        <button id="0" class="dark theme">0</button>
+        <button id="divide" class="dark theme">/</button>
+        <button id="multiply" class="dark theme">x</button>
+        <button type="reset" id="reset" class="dark theme">Reset</button>
+        <button type="submit" id="equal" class="dark theme">=</button>
+      </form>
+    </div>
+  </main>
+  <div class="attribution dark theme">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.linkedin.com/in/jenn-acosta7/" class="dark">Jenn Acosta</a>.
+  </div>
+  <script src="./app/app.js"></script>
+</body>
+</html>
