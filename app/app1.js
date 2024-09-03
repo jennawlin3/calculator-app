@@ -129,13 +129,14 @@ function calculate(calculateScreen) {
 
     result = eval(calculateScreen.join("").toString());
 
+    let resultString = result.toLocaleString("en-us");
+
     if(result.toString().substring(0,4).length > 8) {
-        calculatorScreen.textContent = result.toFixed(8);
+        calculatorScreen.textContent = Number(resultString).toFixed(8);
        } else {
-        calculatorScreen.textContent = result;
+        calculatorScreen.textContent = resultString;
        }
        
     calculateScreen.splice(0, count, result);
-    console.log(calculateScreen);
 }
 
